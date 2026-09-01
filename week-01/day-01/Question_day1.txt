@@ -1,0 +1,18 @@
+Q1:
+const creates a variable whose value cannot change.
+
+let creates a variable whose value can change.
+
+Q2:
+parameter is the variable inside function() bracket 
+
+argument is the variable created inside the function
+
+Q3:
+return will store the function value somewhere
+
+Q4:
+This means print the a+b value, not store the value into a variable.
+
+Q5:
+The variables declared insdie a function would only work inside function. It is not global variables, so you cannot use them outside the function.

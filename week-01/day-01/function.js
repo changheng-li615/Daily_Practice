@@ -1,5 +1,5 @@
 function greetUser(name) {
-    console.log("Hello, " + name + "!");
+    return "Hello, " + name + "!";
 }
 
 function calculateTotal(price, quantity){
@@ -24,9 +24,18 @@ function getLargerNumber(num1, num2) {
     }
 }
 
+function createExpense(description, amount, category) {
+    const expense = {
+        description: description,
+        amount: amount,
+        category: category
+    };
+    return expense;
+}
+
 
 
 greetUser("changheng")
-
 let total = calculateTotal(10, 5);
 console.log(total);
+createExpense("Lunch", 15.5, "Food")
