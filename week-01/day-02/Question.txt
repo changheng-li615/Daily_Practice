@@ -1,0 +1,24 @@
+Q1:
+map() transform: choose a specific field in the object and modify this field in all objects.
+
+filter() selects one field's value and prints all objects that contain the target value. 
+
+reduce() sum, print the sum of the target integer field.
+
+Q2:
+[2, 4, 6]
+
+Q3:
+null
+
+Q4:
+newExpense could create and set this expense on the list, push may create a duplicate one.
+
+Q5:
+First, assign the value to one expense 
+second, extract the value from one expense
+
+Q6:
+first one, cus for loop is complex and O(N) complexcity
+
+ 
