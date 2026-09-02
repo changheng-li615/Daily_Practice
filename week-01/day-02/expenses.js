@@ -16,7 +16,7 @@ function getFoodExpenses(expenses) {
 }
 
 function getExpensiveExpenses(expenses, threshold) {
-    return expenses.filter(expense => expense.amount > threshold);
+    return expenses.filter(expense => expense.amount >= threshold);
 }
 
 function calculateExpensesTotal(expenses) {
@@ -26,6 +26,7 @@ function calculateExpensesTotal(expenses) {
 function addExpense(expenses, description, amount, category) {
     const newExpense = { description, amount, category };
     expenses.push(newExpense);
+    return expenses;
 }
 
 function updateExpense(expenses, description, newAmount) {
@@ -36,7 +37,12 @@ function updateExpense(expenses, description, newAmount) {
 }
 
 function printExpenseSummary(expenses, description) {
-    return console.log(expenses.filter(expense => expense.description === description));
+    const expense = expenses.find(expense => expense.description === description);
+    if (expense) {
+        return `${expense.description} - ${expense.category} - $${expense.amount.toFixed(2)}`;
+    } else {
+        return `Expense with description "${description}" not found.`;
+    }
 }
 
 function getFoodExpenseTotal(expenses) {
@@ -48,8 +54,9 @@ addExpense(expenses, "Laptop", 1200, "Equipment");
 updateExpense(expenses, "Lunch", 20);
 console.log(getDescription(expenses));
 console.log(getFoodExpenses(expenses));
-console.log(getExpensiveExpenses(expenses, 50));
+console.log(getExpensiveExpenses(expenses, 89));
 console.log(calculateExpensesTotal(expenses));
 console.log(getFoodExpenseTotal(expenses));
-printExpenseSummary(expenses, "Dinner");
+console.log(printExpenseSummary(expenses, "Dinner"));
 console.log(calculateExpensesTotal([]));
+console.log(getFoodExpenses([{ description: "Keyboard", amount: 89, category: "Equipment" }]));
