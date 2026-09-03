@@ -1,0 +1,32 @@
+Q1:
+This should fail
+Because const x = 10 is an inner variable, only for test function
+So we need to call the function if we want print x in the outside.
+
+Q2:
+const x = 10 in this part is global variable
+it outer the function
+so all function could use it
+
+Q3:
+This is because only counter = createCounter() will run let count = 0
+counter return the function will ++ count number
+So counter will force count + 1 but will not reset the count.
+cus closure createCounter function already closed, ++ function at return part
+
+Q4:
+output:
+1
+2
+
+Q5:
+return false is set the Boolean value into false, we always use this one in the condition sentence
+
+but throw new Error will stop the invalid code behaviour stop the program, and throw the error message
+try .... catch ... sentence could test throw new error work without stop the program.
+
+Q6:
+We need to consider the maintenance and readability of code
+
+Q7:
+yes class could contain more function and init the objects, this is better to import into other file 
