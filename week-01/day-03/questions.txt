@@ -18,9 +18,11 @@ Q4:
 output:
 1
 2
+1
+This is because we call the createCounter again at counterB, so it will run the let count = 0 again and count again
 
 Q5:
-return false is set the Boolean value into false, we always use this one in the condition sentence
+return false sends a Boolean false value into caller, we always use this one in the condition sentence
 
 but throw new Error will stop the invalid code behaviour stop the program, and throw the error message
 try .... catch ... sentence could test throw new error work without stop the program.
@@ -29,4 +31,7 @@ Q6:
 We need to consider the maintenance and readability of code
 
 Q7:
-yes class could contain more function and init the objects, this is better to import into other file 
+yes class could contain more function and init the objects, this is better to import into other file
+
+extend question:
+yes it will affected by push, all.getAll will print one more object 

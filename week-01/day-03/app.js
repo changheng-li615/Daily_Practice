@@ -26,7 +26,7 @@ try{
 }
  
 tracker.add("Lunch", 20, "Food");
-tracker.add("Bus", -5, "Transport");
+tracker.add("Bus", 5, "Transport");
 tracker.add("Monitor", 250, "Equipment");
 
 console.log(tracker.getAll());

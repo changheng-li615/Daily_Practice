@@ -2,6 +2,10 @@ function createBudget(initialBudget) {
     let remaining = initialBudget;
     return {
         spend(amount) {
+            if (amount < 0) {
+                throw new Error("Invalid expense amount. Amount must be a positive number.");
+            }
+            
             if (amount <= remaining) {
                 remaining -= amount;
             }
